@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <li><a href="cadastrausuario.php">CADASTRA USUARIO</a></li>
             <li><a href="listausuario.php">LISTA USUARIO</a></li>
             <li><a href="cadastraproduto.php">CADASTRA PRODUTO</a></li>
+            <li><a href="cadastracliente.php">CADASTRA CLIENTE</a></li>
             <li><a href="listaproduto.php">LISTA PRODUTO</a></li>
             <li><a href="listacliente.php">LISTA CLIENTE</a></li>
             <li><a href="alterarclientes.php">ALTERA CLIENTE</a></li>
