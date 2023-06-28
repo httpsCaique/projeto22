@@ -74,26 +74,67 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
 
         <div class="container">
-            <table border="1">
-                <tr>
-                    <th>NOME</th>
-                    <th>ALTERAR DADOS</th>
-                    <th>ATIVO?</th>
-                </tr>
-                <!-- BRUXARIA EM PHP -->
-                <?php
-                    while($tbl = mysqli_fetch_array($retorno)){
-                ?>
-                    <tr>
-                        <td><?= $tbl[2]?></td> <!-- TRAZ SOMENTE A COLUNA 1 DO BANCO [NOME]-->
-                        <td><a href="alterarclientes.php?id=<?= $tbl[0]?>">
-                        <input type="button" value="ALTERAR DADOS"></a></td> <!-- CRIANDO UM BOTÃO ALTERAR PASSANDO O ID DO USUARIO NA URL VIA GET -->
-                        <td><?=$check =($tbl[3] == 's')?"SIM":"NÃO"?></td> <!-- VALIDA S OU N E ESCREVE "SIM" E "NÃO"-->
-                    </tr>
-                    <?php
-                    }
-                    ?>
-            </table>
+        <table border="1">
+
+<tr>
+
+    <th>CPF</th>
+
+    <th>NOME</th>
+
+    <th>DATA NASCIMENTO</th>
+
+    <th>TELEFONE</th>
+
+    <th>LOGRADOURO</th>
+
+    <th>NUMERO</th>
+
+    <th>CIDADE</th>
+
+    <th>ALTERAR DADOS</th>
+
+    <th>ATIVO?</th>
+
+<tr>
+
+    <?php
+
+    while($tbl = mysqli_fetch_array($retorno)){
+
+    ?>
+
+    <tr>
+
+        <td><?=$tbl[1]?></td>
+
+        <td><?=$tbl[2]?></td>
+
+        <td><?=$tbl[4]?></td>
+
+        <td><?=$tbl[5]?></td>
+
+        <td><?=$tbl[6]?></td>
+
+        <td><?=$tbl[7]?></td>
+
+        <td><?=$tbl[8]?></td>
+
+        <td><a href="alteracliente.php?id=<?= $tbl[0]?>"><input type = "button" value="ALTERAR DADOS"></a></td>
+
+        <td><?=$check =($tbl[9] == 's')?"SIM":"NÃO"?>
+
+        </td>
+
+    </tr>
+
+        <?php
+
+    }
+
+        ?>
+
+</table>
         </div>
 
     </div>
