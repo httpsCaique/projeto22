@@ -18,7 +18,7 @@
                 <li><a href="listausuario.php">LISTA USUARIO</a></li>
                 <li><a href="cadastraproduto.php">CADASTRA PRODUTO</a></li>
                 <li><a href="listaproduto.php">LISTA PRODUTO</a></li>
-                <li><a href="listacliente.php">LISTA CLIENTE</a></li>
+                <li><a href="listaclientes.php">LISTA CLIENTE</a></li>
                 <li class="menuloja"><a href="logout.php">SAIR</a></li>
                 <?php
                     #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA
