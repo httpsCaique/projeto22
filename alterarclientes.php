@@ -7,33 +7,7 @@ $ativo = 's';
 
 
 //usuario clika no botao salvar
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = $_POST['id'];
-    $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
-    $senha = $_POST['senha'];
-    $datanasc = $_POST['datanasc'];
-    $telefone = $_POST['telefone'];
-    $logradouro = $_POST['logradouro'];
-    $numero = $_POST['numero'];
-    $cidade = $_POST['cidade'];
-    $ativo = $_POST['ativo'];
-
-    //$sql ="UPDATE clientes SET usu_nome = '$nome', usu_senha = '$senha', usu_ativo = '$ativo' WHERE usu_id = $id";
-
-    $sql = "UPDATE clientes SET cli_nome = '$nome', cli_cpf = '$cpf', cli_senha ='$senha', cli_datanasc = STR_TO_DATE('$datanasc','%Y-%m-%d'), cli_telefone = '$telefone', cli_logradouro = '$logradouro', cli_numero = '$numero', cli_cidade = '$cidade', cli_ativo = '$ativo' WHERE cli_id = $id";
-    mysqli_query($link, $sql);
-   
-
-
-
-
-
-    echo"<script>window.alert('CLIENTE ALTERADO COM SUCESSO!');</script>";    
-
-    echo"<script>window.location.href='admhome.php';</script>";
-
-}
+ 
 
 $id = $_GET['id'];
 $sql = "SELECT * FROM clientes WHERE cli_id = '$id'";
