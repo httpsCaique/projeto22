@@ -54,7 +54,7 @@ while ($tbl = mysqli_fetch_array($retorno)) {
             if ($nomeusuario != null) {
             ?>
                 <!-- USO DO ELEMENTO HTML COM PHP INTERNO -->
-                <li class="profile">OLÁ <?= strtoupper($nomeusuario) ?></li>
+                <li class="profile"> OLÁ <?= strtoupper($nomeusuario) ?></li>
             <?php
                 #ABERTURA DE OUTRO PHP PARA CASO FALSE
             } else {
