@@ -44,8 +44,8 @@ $retorno = mysqli_query($link, $sql);
                     ?>
 
                         <form action="formmenu2">
-                            <li class="menu-right"><a href="logincliente.php" style="float: right;"></a></li>
-                            <li class="menu-right"><a href="cadastracliente.php">CADASTRAR</a></li>
+                            <li class="menu-right"><a href="logincliente.php" style="float: right;">ENTRAR</a></li>
+                            <li class="menu-right"><a href="../cadastracliente.php">CADASTRAR</a></li>
                         </form>
                     <?php
                     }
